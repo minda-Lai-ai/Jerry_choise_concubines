@@ -10,7 +10,7 @@ st.set_page_config(layout="wide")
 
 # --- 圖片路徑 ---
 IMAGE_DIR = "IMAGE"
-BACKGROUND_FILE = "JERRY.JPG"
+BACKGROUND_FILE = "JERRY.jpg"
 SYMBOL_FILES = [f"s0{i}.jpg" for i in range(1, 10)]
 
 # 圖片的顯示寬度調整為 68 (原 90 * 0.75)
