@@ -1,0 +1,14 @@
+import pandas as pd
+
+# 儲存 CSV 檔案並指定 UTF-8 編碼
+data = pd.DataFrame({"欄位": ["繁體中文", "測試"]})
+data.to_csv("output.csv", encoding="utf-8-sig", index=False)
+
+# 在 Streamlit 中提供下載
+with open("output.csv", "rb") as file:
+    st.download_button(
+        label="下載 CSV",
+        data=file,
+        file_name="output.csv",
+        mime="text/csv"
+    )
